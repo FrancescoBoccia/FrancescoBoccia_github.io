@@ -784,16 +784,16 @@ ul.links {
     margin-left: 0;
   }
   #radio2:checked ~  .first {
-    margin-left: -10%;
-  }
-  #radio3:checked ~  .first {
     margin-left: -20%;
   }
+  #radio3:checked ~  .first {
+    margin-left: -40%;
+  }
   #radio4:checked ~  .first {
-    margin-left: -30%;
+    margin-left: -60%;
   }
   #radio5:checked ~  .first {
-    margin-left: -40%;
+    margin-left: -80%;
   }
   .manual-btn {
     padding: 2.1px;
