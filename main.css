@@ -45,12 +45,9 @@ p > a:hover {
 /* HEADER  */
 
 #header {
-  /* Display */
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* Modifier */
   margin-top: 10em;
 }
 .p-header {
@@ -209,10 +206,12 @@ h2 > a {
   text-align: center;
   text-transform: uppercase;
 }
-.front-end {
+.p-header::after {
+  content: '"Front end web developer"';
   color: #ff0000;
   font-family: var(--main-font);
   font-size: 1.5rem;
+
 }
 .p-title {
   color: #000 !important;
@@ -466,12 +465,14 @@ ul.links {
 .slider {
   overflow: hidden;
   width: 100%;
+  transform: translateX(0);
+  cursor: grab;
 }
 
 .slides {
-  display: flex;
-  overflow: hidden;
+  display: inline-flex;
   width: 500%;
+  transition: transform 0.3s ease-out;
 }
 
 .slides input {
@@ -479,13 +480,23 @@ ul.links {
 }
 
 .slide{
-  transition: 2s;
+  transition: 1.5s;
   width: 20%;
 }
 
 .slide img {
   object-fit:contain;
   max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grabbing .slide img {
+  transform: scale(0.95);
 }
 
 .image-navigation {
@@ -494,11 +505,6 @@ ul.links {
   margin-top: 1em;
   width: 100%;
 }
-
-.grabbing {
-  cursor: grabbing;
-}
-
 
 .manual-btn {
   border: 1.5px solid #000;
@@ -588,7 +594,7 @@ ul.links {
     padding: 0.6em;
 
     /* Font */
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     /* Position  */
     display: none;
@@ -620,7 +626,7 @@ ul.links {
   }
 
   .active {
-    font-size: 1.45rem;
+    font-size: 1rem;
   }
   .workInProgress {
     color: rgb(216, 205, 205);
@@ -778,6 +784,14 @@ ul.links {
   p {
     font-size: 1.38rem;
     margin-top: 1em;
+  }
+
+  .active {
+    font-size: 1.4rem;
+  }
+
+  .closeMenu {
+    font-size: 1.9rem;
   }
   .icon-1 {
     transform: translate(-50%, 15%);

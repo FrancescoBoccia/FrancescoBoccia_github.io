@@ -17,10 +17,14 @@ closeMenu.addEventListener("click", toggleButton);
 
 function scrollEventResponsive() {
   let y = window.pageYOffset;
-  let x = window.matchMedia("(max-width: 450px)")
-  let xx = window.matchMedia("(min-width: 450px) and (max-width: 650px)")
-  let X = window.matchMedia("(min-width: 650px)")
-  if (y >= 200 && x.matches || y >= 300 && xx.matches || y >= 400 && X.matches) {
+  let x = window.matchMedia("(max-width: 450px)");
+  let xx = window.matchMedia("(min-width: 450px) and (max-width: 650px)");
+  let X = window.matchMedia("(min-width: 650px)");
+  if (
+    (y >= 200 && x.matches) ||
+    (y >= 300 && xx.matches) ||
+    (y >= 400 && X.matches)
+  ) {
     hamburgerButton.classList.add("scroll");
   } else {
     hamburgerButton.classList.remove("scroll");

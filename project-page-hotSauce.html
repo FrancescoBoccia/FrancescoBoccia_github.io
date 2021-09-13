@@ -3,108 +3,144 @@
   <head>
     <title>Build a Secure API for a Review App</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
+      name="description"
+      content="A quite laborious project, based on the backend, in which I use for the first time my backend skills!"
     />
-    <meta 
-    name="description"
-    content="A quite laborious project, based on the backend, in which I use for the first time my backend skills!" />
     />
     <link rel="stylesheet" href="main.css" />
-    <script src="https://kit.fontawesome.com/c721a9be98.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c721a9be98.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header id="header">
+      <a href="index.html" class="logo project-logo">My Portfolio</a>
+    </header>
 
-      <header id="header">
-        <a href="index.html" class="logo project-logo">My Portfolio</a>
-      </header>
-
-      <nav id="nav">
-        <ul id="nav-list">
-          <li class="active">
-            <a href="project-page-teddy.html">E-commerce website</a>
-          </li>
-          <li class="active" id="project-title">
-            <a href="project-page-hotSauce.html"
-              >Build a Secure API for a Review App</a
-            >
-          </li>
-          <li class="active">
-            <a href="project-page-socialMedia.html"
-              >Build a full stack solution</a
-            >
-          </li>
-          <li class="active workInProgress">
-            <a href="work-in-progress.html"
-            >Work In Progress...</a
-          ></li>
-          <li class="active projects-list">
-            <a class="project-anchor" href="index.html">My Portfolio</a>
-          </li>
-        </ul>
+    <nav id="nav">
+      <ul id="nav-list">
+        <li class="active">
+          <a href="project-page-teddy.html">E-commerce website</a>
+        </li>
+        <li class="active" id="project-title">
+          <a href="project-page-hotSauce.html"
+            >Build a Secure API for a Review App</a
+          >
+        </li>
+        <li class="active">
+          <a href="project-page-socialMedia.html"
+            >Build a full stack solution</a
+          >
+        </li>
+        <li class="active workInProgress">
+          <a href="work-in-progress.html">Work In Progress...</a>
+        </li>
+        <li class="active projects-list">
+          <a class="project-anchor" href="index.html">My Portfolio</a>
+        </li>
+      </ul>
       <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
       <div class="closeMenu"><i class="fa fa-times"></i></div>
-      </nav>
+    </nav>
 
-      <div id="main">
-        <article class="post featured">
-          <h2>Struggle</h2>
-            <p>
-              1) User password must be encrypted.<br>
-              2) Transport and storage of PII should be secure.<br>
-              3) Captures and saves image, parses stringified sauce and saves it to the database, setting its imageUrl correctly.
-            </p>
-            
-            <div class="slider">
-              <div class="slides">
-                <input type="radio" name="radio-button" id="radio1">
-                <input type="radio" name="radio-button" id="radio2">
-                <input type="radio" name="radio-button" id="radio3">
-                <div class="slide first">
-                  <img  src="images/project 6/Login Page.png" alt="HotSauce-project"/>
-                </div>
-                <div class="slide">
-                  <img  src="images/project 6/Description Page.png" alt="HotSauce-project"/>
-                </div>
-                <div class="slide last">
-                  <img  src="images/project 6/Single sauce.png" alt="HotSauce-project"/>
-                </div>
-              </div>
-                <div class="image-navigation">
-                  <label for="radio1" class="manual-btn current-square"></label>
-                  <label for="radio2" class="manual-btn"></label>
-                  <label for="radio3" class="manual-btn"></label>
-                </div>
+    <div id="main">
+      <article class="post featured">
+        <h2>Struggle</h2>
+        <p>
+          1) User password must be encrypted.<br />
+          2) Transport and storage of PII should be secure.<br />
+          3) Captures and saves image, parses stringified sauce and saves it to
+          the database, setting its imageUrl correctly.
+        </p>
+
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-button" id="radio1" />
+            <input type="radio" name="radio-button" id="radio2" />
+            <input type="radio" name="radio-button" id="radio3" />
+            <div class="slide first">
+              <img
+                src="images/project 6/Login Page.png"
+                alt="HotSauce-project"
+              />
             </div>
-          <h2>Problem Solving</h2>
-          <p>
-            1) Using bcrypt, in order to hash and salt a password. (Was a good chooise).<br>
-            2) After searching for the answer, creating a public and private key, with a Certificate Signing Request would make the job.<br>
-            3) The middleware Multer, with the right set up, educated me.
-          </p>
-          <ul class="actions special">
-            <li><a href="https://github.com/FrancescoBoccia/FrancescoBoccia_6_20Mar21" target="_blank" rel="noopener" aria-label="GitHub-Project" class="button large"><i class="icon-4 fab fa-github"></i><span>Github Link</span></a></li>
-          </ul>
-        </article>
-      </div>
+            <div class="slide">
+              <img
+                src="images/project 6/Description Page.png"
+                alt="HotSauce-project"
+              />
+            </div>
+            <div class="slide last">
+              <img
+                src="images/project 6/Single sauce.png"
+                alt="HotSauce-project"
+              />
+            </div>
+          </div>
+          <div class="image-navigation">
+            <label for="radio1" class="manual-btn current-square"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+          </div>
+        </div>
+        <h2>Problem Solving</h2>
+        <p>
+          1) Using bcrypt, in order to hash and salt a password. (Was a good
+          chooise).<br />
+          2) After searching for the answer, creating a public and private key,
+          with a Certificate Signing Request would make the job.<br />
+          3) The middleware Multer, with the right set up, educated me.
+        </p>
+        <ul class="actions special">
+          <li>
+            <a
+              href="https://github.com/FrancescoBoccia/FrancescoBoccia_6_20Mar21"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub-Project"
+              class="button large"
+              ><i class="icon-4 fab fa-github"></i><span>Github Link</span></a
+            >
+          </li>
+        </ul>
+      </article>
+    </div>
 
     <footer id="footer">
-			<section>
-			  <h3>Email</h3>
-			  <p><a href=mailto:bocciadrespo@gmail.com? subject="subject text">bocciadrespo@gmail.com</a></p>
-		  </section>
-          <section>
-            <h2 class="social">Social</h2>
-            <ul class="icons alt">
-              <li>
-                <a href="https://www.linkedin.com/in/francesco-boccia-72838815b/" target="_blank" rel="noopener" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/FrancescoBoccia" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              </li>
-            </ul>
-		  </section>
+      <section>
+        <h3>Email</h3>
+        <p>
+          <a href="mailto:bocciadrespo@gmail.com?" subject="subject text"
+            >bocciadrespo@gmail.com</a
+          >
+        </p>
+      </section>
+      <section>
+        <h2 class="social">Social</h2>
+        <ul class="icons alt">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/francesco-boccia-72838815b/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Linkedin"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/FrancescoBoccia"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
     </footer>
     <script src="JS/main.js"></script>
     <script src="JS/Slide.js"></script>
