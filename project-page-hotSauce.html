@@ -8,8 +8,8 @@
       name="description"
       content="A quite laborious project, based on the backend, in which I use for the first time my backend skills!"
     />
-    />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.css">
     <script
       src="https://kit.fontawesome.com/c721a9be98.js"
       crossorigin="anonymous"
@@ -56,37 +56,21 @@
           the database, setting its imageUrl correctly.
         </p>
 
-        <div class="slider">
-          <div class="slides">
-            <input type="radio" name="radio-button" id="radio1" />
-            <input type="radio" name="radio-button" id="radio2" />
-            <input type="radio" name="radio-button" id="radio3" />
-            <div class="slide first">
-              <img
-                src="images/project 6/Login Page.png"
-                alt="HotSauce-project"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="images/project 6/Description Page.png"
-                alt="HotSauce-project"
-              />
-            </div>
-            <div class="slide last">
-              <img
-                src="images/project 6/Single sauce.png"
-                alt="HotSauce-project"
-              />
-            </div>
-          </div>
-          <div class="image-navigation">
-            <label for="radio1" class="manual-btn current-square"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-          </div>
+        <div
+        class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell">
+          <img src="images/project 6/Login Page.png" alt="HotSauce-project" />
         </div>
-        <h2>Problem Solving</h2>
+        <div class="gallery-cell">
+          <img src="images/project 6/Description Page.png" alt="HotSauce-project" />
+        </div>
+        <div class="gallery-cell">
+          <img src="images/project 6/Single sauce.png" alt="HotSauce-project" />
+        </div>
+      </div>
+      
+        <h2 class="problem-solving">Problem Solving</h2>
         <p>
           1) Using bcrypt, in order to hash and salt a password. (Was a good
           chooise).<br />
@@ -111,7 +95,7 @@
 
     <footer id="footer">
       <section>
-        <h3>Email</h3>
+        <h2>Email</h2>
         <p>
           <a href="mailto:bocciadrespo@gmail.com?" subject="subject text"
             >bocciadrespo@gmail.com</a
@@ -142,7 +126,7 @@
         </ul>
       </section>
     </footer>
-    <script src="JS/main.js"></script>
-    <script src="JS/Slide.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
   </body>
 </html>

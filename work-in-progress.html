@@ -3,100 +3,134 @@
   <head>
     <title>Build a Secure API for a Review App</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
+      name="description"
+      content="A quite laborious project, based on the backend, in which I use for the first time my backend skills!"
     />
-    <meta 
-    name="description"
-    content="A quite laborious project, based on the backend, in which I use for the first time my backend skills!" />
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.css"
     />
-    <link rel="stylesheet" href="main.css" />
-    <script src="https://kit.fontawesome.com/c721a9be98.js" crossorigin="anonymous"></script>
+
+    <script
+      src="https://kit.fontawesome.com/c721a9be98.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header id="header">
+      <a href="index.html" class="logo project-logo">My Portfolio</a>
+    </header>
 
-      <header id="header">
-        <a href="index.html" class="logo project-logo">My Portfolio</a>
-      </header>
-
-      <nav id="nav">
-        <ul id="nav-list">
-          <li class="active">
-            <a href="project-page-teddy.html">E-commerce website</a>
-          </li>
-          <li class="active">
-            <a href="project-page-hotSauce.html"
-              >Build a Secure API for a Review App</a
-            >
-          </li>
-          <li class="active">
-            <a href="project-page-socialMedia.html"
-              >Build a full stack solution</a
-            >
-          </li>
-          <li class="active workInProgress" id="project-title">
-            <a href="work-in-progress.html"
-            >Work In Progress...</a
-          ></li>
-          <li class="active projects-list">
-            <a class="project-anchor" href="index.html">My Portfolio</a>
-          </li>
-        </ul>
+    <nav id="nav">
+      <ul id="nav-list">
+        <li class="active">
+          <a href="project-page-teddy.html">E-commerce website</a>
+        </li>
+        <li class="active">
+          <a href="project-page-hotSauce.html"
+            >Build a Secure API for a Review App</a
+          >
+        </li>
+        <li class="active">
+          <a href="project-page-socialMedia.html"
+            >Build a full stack solution</a
+          >
+        </li>
+        <li class="active workInProgress" id="project-title">
+          <a href="work-in-progress.html">Work In Progress...</a>
+        </li>
+        <li class="active projects-list">
+          <a class="project-anchor" href="index.html">My Portfolio</a>
+        </li>
+      </ul>
       <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
       <div class="closeMenu"><i class="fa fa-times"></i></div>
-      </nav>
+    </nav>
 
-      <div id="main">
-        <article class="post featured">
-          <h2>Project</h2>
-            <p>
-              1) Creating an E-commerce website for my father.<br>
-              2) Improving my skills with JS and MySQL.<br>
-              3) Adding a payment method.
-            </p>
+    <div id="main">
+      <article class="post featured">
+        <h2>Project</h2>
+        <p>
+          1) Creating an E-commerce website for my father.<br />
+          2) Improving my skills with JS and MySQL.<br />
+          3) Adding a payment method.
+        </p>
 
-            <div class="slider">
-              <div class="slides">
-                <input type="radio" name="radio-button" id="radio1">
-                <input type="radio" name="radio-button" id="radio2">
-                <input type="radio" name="radio-button" id="radio3">
-                <div class="slide first ">
-                    <img  src="images/Work in progress/Home Page.png" alt="Work-In-Progress"/>
-                  </div>
-                <div class="slide">
-                  <img  src="images/Work in progress/Single Product Page.png" alt="Work-In-Progress"/>
-                </div>
-                <div class="slide last">
-                  <img  src="images/Work in progress/Group 3.png" alt="Work-In-Progress"/>
-                </div>
-              </div>
-                <div class="image-navigation">
-                  <label for="radio1" class="manual-btn current-square"></label>
-                  <label for="radio2" class="manual-btn"></label>
-                  <label for="radio3" class="manual-btn"></label>
-                </div>
-            </div>
-      </div>
+        <div
+          class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround": true }'
+        >
+          <div class="gallery-cell">
+            <img
+              src="images/Work in progress/Home Page.png"
+              alt="WorkInProgress"
+            />
+          </div>
+          <div class="gallery-cell">
+            <img
+              src="images/Work in progress/Single Product Page.png"
+              alt="WorkInProgress"
+            />
+          </div>
+          <div class="gallery-cell">
+            <img
+              src="images/Work in progress/Group 3.png"
+              alt="WorkInProgress"
+            />
+          </div>
+          <div class="gallery-cell">
+            <img
+              src="images/Work in progress/Find Us Page.png"
+              alt="WorkInProgress"
+            />
+          </div>
+        </div>
+        <h2 class="problem-solving"></h2>
+      </article>
+    </div>
 
     <footer id="footer">
-			<section>
-			  <h3>Email</h3>
-			  <p><a href=mailto:bocciadrespo@gmail.com? subject="subject text">bocciadrespo@gmail.com</a></p>
-		  </section>
-          <section>
-            <h2 class="social">Social</h2>
-            <ul class="icons alt">
-              <li>
-                <a href="https://www.linkedin.com/in/francesco-boccia-72838815b/" target="_blank" rel="noopener" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/FrancescoBoccia" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              </li>
-            </ul>
-		  </section>
+      <section>
+        <h2>Email</h2>
+        <p>
+          <a href="mailto:bocciadrespo@gmail.com?" subject="subject text"
+            >bocciadrespo@gmail.com</a
+          >
+        </p>
+      </section>
+      <section>
+        <h2 class="social">Social</h2>
+        <ul class="icons alt">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/francesco-boccia-72838815b/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Linkedin"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/FrancescoBoccia"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
     </footer>
-    <script src="JS/main.js"></script>
-    <script src="JS/Slide.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"
+    ></script>
   </body>
 </html>

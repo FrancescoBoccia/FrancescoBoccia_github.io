@@ -8,7 +8,8 @@
       name="description"
       content="My first E-commerce website, I'm elevated about this project, cause it did teach me about JavaScript and how coding can be frustrating"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.css">
     <script
       src="https://kit.fontawesome.com/c721a9be98.js"
       crossorigin="anonymous"
@@ -45,7 +46,7 @@
       <div class="closeMenu"><i class="fa fa-times"></i></div>
     </nav>
 
-    <div id="main">
+    <div id="main" class="main-project">
       <article class="post featured">
         <h2>Struggle</h2>
         <p>
@@ -54,45 +55,23 @@
           3) Data Validation. (`` backticks)
         </p>
 
-        <div class="slider">
-          <div class="slides">
-            <input type="radio" name="radio-button" id="radio1" />
-            <input type="radio" name="radio-button" id="radio2" />
-            <input type="radio" name="radio-button" id="radio3" />
-            <input type="radio" name="radio-button" id="radio4" />
-            <input type="radio" name="radio-button" id="radio5" />
-            <div class="slide first">
-              <img src="images/teddy/Main Page Teddy.png" alt="teddy-project" />
-            </div>
-            <div class="slide">
-              <img src="images/teddy/Product Page.png" alt="teddy-project" />
-            </div>
-            <div class="slide">
-              <img
-                src="images/teddy/Single Product Page.png"
-                alt="teddy-project"
-              />
-            </div>
-            <div class="slide">
-              <img src="images/teddy/Cart Page.png" alt="teddy-project" />
-            </div>
-            <div class="slide last">
-              <img
-                src="images/teddy/Thanks for buying.png"
-                alt="teddy-project"
-              />
-            </div>
+        <div class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround": true }'>
+          <div class="gallery-cell">
+            <img src="images/teddy/Main Page Teddy.png" alt="TeddyEcommerce-Projcet">
           </div>
-          <div class="image-navigation">
-            <label for="radio1" class="manual-btn current-square"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-            <label for="radio5" class="manual-btn"></label>
+          <div class="gallery-cell">
+            <img src="images/teddy/Single Product Page.png" alt="TeddyEcommerce-Projcet">
+          </div>
+          <div class="gallery-cell">
+            <img src="images/teddy/Cart Page.png" alt="TeddyEcommerce-Projcet">
+          </div>
+          <div class="gallery-cell">
+            <img src="images/teddy/Thanks for buying.png" alt="TeddyEcommerce-Projcet">
           </div>
         </div>
 
-        <h2>Problem Solving</h2>
+        <h2 class="problem-solving">Problem Solving</h2>
         <p>
           1) Using the backticks ``, allowed me to understand how to use URL
           query parameters, being able to dinamically input elements.<br />
@@ -118,7 +97,7 @@
 
     <footer id="footer">
       <section>
-        <h3>Email</h3>
+        <h2>Email</h2>
         <p>
           <a href="mailto:bocciadrespo@gmail.com?" subject="subject text"
             >bocciadrespo@gmail.com</a
@@ -149,7 +128,7 @@
         </ul>
       </section>
     </footer>
-    <script src="JS/main.js"></script>
-    <script src="JS/Slide.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
   </body>
 </html>
