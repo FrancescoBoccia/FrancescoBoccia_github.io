@@ -489,9 +489,6 @@ body {
   counter-increment: gallery-cell;
 }
 
-.flickity-button {
-}
-
 /* MEDIA-QUERIES */
 
 @media only screen and (max-width: 1000px) {
