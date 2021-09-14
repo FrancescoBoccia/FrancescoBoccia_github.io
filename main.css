@@ -170,6 +170,7 @@ li > a:hover {
   color: var(--main-color);
 }
 
+
 /* MAIN-ARTICLE  */
 
 #main {
@@ -489,7 +490,6 @@ body {
 }
 
 .flickity-button {
-  display: none;
 }
 
 /* MEDIA-QUERIES */
