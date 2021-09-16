@@ -265,7 +265,7 @@ a > img:hover {
 
 .actions.special {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
   margin-left: 0;
   margin-top: 2em;
