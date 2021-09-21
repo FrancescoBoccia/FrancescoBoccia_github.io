@@ -1,17 +1,30 @@
-//  Hamburger Menu
+// Burger Menu
 
-const hamburgerButton = document.getElementById("hamburger");
+const menuButton = document.querySelector(".menu-btn");
 const navList = document.getElementById("nav-list");
-const closeMenu = document.querySelector(".closeMenu");
+const menuPadding = document.getElementById("menu-padding");
+const headerFocus = document.querySelector(".focus");
+const bodyFocus = document.querySelector(".focus2");
+const footerFocus = document.querySelector(".focus3");
 
-function toggleButton() {
-  navList.classList.toggle("show");
-  hamburgerButton.classList.toggle("remove");
-  closeMenu.classList.toggle("closeNav");
-}
-
-hamburgerButton.addEventListener("click", toggleButton);
-closeMenu.addEventListener("click", toggleButton);
+let menuOpen = false;
+menuButton.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuButton.classList.add("open");
+    navList.classList.add("show");
+    headerFocus.classList.add("blur");
+    bodyFocus.classList.add("blur");
+    footerFocus.classList.add("blur");
+    menuOpen = true;
+  } else {
+    menuButton.classList.remove("open");
+    navList.classList.remove("show");
+    headerFocus.classList.remove("blur");
+    bodyFocus.classList.remove("blur");
+    footerFocus.classList.remove("blur");
+    menuOpen = false;
+  }
+});
 
 // Scroll Page Animation
 
@@ -25,9 +38,9 @@ function scrollEventResponsive() {
     (y >= 300 && xx.matches) ||
     (y >= 400 && X.matches)
   ) {
-    hamburgerButton.classList.add("scroll");
+    menuPadding.classList.add("scroll");
   } else {
-    hamburgerButton.classList.remove("scroll");
+    menuPadding.classList.remove("scroll");
   }
 }
 window.addEventListener("scroll", scrollEventResponsive);

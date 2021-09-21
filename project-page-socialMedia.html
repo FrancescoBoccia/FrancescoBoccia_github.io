@@ -20,9 +20,11 @@
     ></script>
   </head>
   <body>
-    <header id="header">
-      <a href="index.html" class="logo project-logo">My Portfolio</a>
-    </header>
+    <div class="focus">
+      <header id="header">
+        <a href="index.html" class="logo project-logo">My Portfolio</a>
+      </header>
+    </div>
 
     <nav id="nav">
       <ul id="nav-list">
@@ -46,11 +48,13 @@
           <a class="project-anchor" href="index.html">My Portfolio</a>
         </li>
       </ul>
-      <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
-      <div class="closeMenu"><i class="fa fa-times"></i></div>
     </nav>
+    <div class="menu-btn">
+      <div id="menu-padding"></div>
+      <div class="menu-btn__burger"></div>
+    </div>
 
-    <div id="main">
+    <div id="main" class="focus2">
       <article class="post featured">
         <h2>Struggle</h2>
         <p>
@@ -60,15 +64,25 @@
 
         <div
           class="gallery js-flickity"
-          data-flickity-options='{"imagesLoaded": true,"resize": true, "wrapAround": true, "friction": 0.15, "selectedAttraction": 0.01 }'>
+          data-flickity-options='{"imagesLoaded": true,"resize": true, "wrapAround": true, "friction": 0.15, "selectedAttraction": 0.01 }'
+        >
           <div class="gallery-cell">
-            <img src="images/Project 7/Login Page.png" alt="SocialMedia-Project" />
+            <img
+              src="images/Project 7/Login Page.png"
+              alt="SocialMedia-Project"
+            />
           </div>
           <div class="gallery-cell">
-            <img src="images/Project 7/Main Page.png" alt="SocialMedia-Project" />
+            <img
+              src="images/Project 7/Main Page.png"
+              alt="SocialMedia-Project"
+            />
           </div>
           <div class="gallery-cell">
-            <img src="images/project 7/Profile Page.png" alt="SocialMedia-Project" />
+            <img
+              src="images/project 7/Profile Page.png"
+              alt="SocialMedia-Project"
+            />
           </div>
         </div>
 
@@ -102,7 +116,7 @@
       </article>
     </div>
 
-    <footer id="footer">
+    <footer id="footer" class="focus3">
       <section>
         <h2>Email</h2>
         <p>
