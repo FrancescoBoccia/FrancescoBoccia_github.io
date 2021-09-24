@@ -7,21 +7,29 @@ const headerFocus = document.querySelector(".focus");
 const bodyFocus = document.querySelector(".focus2");
 const footerFocus = document.querySelector(".focus3");
 
+function addClassToBlur(className) {
+  className.classList.add("blur");
+}
+
+function removeClassToBlur(className) {
+  className.classList.remove("blur");
+}
+
 let menuOpen = false;
 menuButton.addEventListener("click", () => {
   if (!menuOpen) {
     menuButton.classList.add("open");
     navList.classList.add("show");
-    headerFocus.classList.add("blur");
-    bodyFocus.classList.add("blur");
-    footerFocus.classList.add("blur");
+    addClassToBlur(headerFocus);
+    addClassToBlur(bodyFocus);
+    addClassToBlur(footerFocus);
     menuOpen = true;
   } else {
     menuButton.classList.remove("open");
     navList.classList.remove("show");
-    headerFocus.classList.remove("blur");
-    bodyFocus.classList.remove("blur");
-    footerFocus.classList.remove("blur");
+    removeClassToBlur(headerFocus);
+    removeClassToBlur(bodyFocus);
+    removeClassToBlur(footerFocus);
     menuOpen = false;
   }
 });
