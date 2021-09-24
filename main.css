@@ -6,7 +6,7 @@
   --main-font: "Raleway", sans-serif;
   --second-font: "Lusitana", serif;
   --font-large: clamp(2rem, 3vw + 1rem, 2.2rem);
-  --font-small: clamp(1rem, 2vw + 1rem, 1.2rem);
+  --font-small: clamp(1rem, 2vw + 1rem, 1.4rem);
 
   /* Color */
   --main-color: #e50101;
@@ -23,7 +23,7 @@ body {
   padding: 0;
 }
 
-.blur{
+.blur {
   filter: blur(4px);
 }
 p > a {
@@ -188,6 +188,7 @@ li > a:hover {
   flex-direction: column;
 }
 
+
 .major {
   padding: 2em;
   text-align: center;
@@ -237,7 +238,8 @@ p {
   color: #726d6c;
   font-family: var(--second-font);
   font-style: italic;
-  line-height: 2em;
+  font-size: 1.2rem;
+  line-height: 1.5em;
   margin: 0 0 1em 0;
   text-align: left;
 }
@@ -245,8 +247,7 @@ p {
 img {
   display: block;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   max-width: 100%;
   margin-bottom: 1em;
 }
@@ -487,7 +488,6 @@ ul.links {
   #header {
     margin-top: 5em;
     margin-bottom: 2em;
-
   }
   #header .project-logo {
     margin-top: 0.2em;
@@ -621,6 +621,10 @@ ul.links {
   .projects-list:focus {
     outline: 0;
   }
+
+  .posts {
+    flex-direction: column;
+  }
 }
 
 /* MEDIA-QUERIES */
@@ -750,7 +754,10 @@ ul.links {
   .menu-btn__burger::after {
     transform: translateY(7px);
   }
-
+  .scroll{
+    width: 3.3em;
+    height: 3.3em;
+  }
   span.date {
     font-size: 1.4rem;
   }
@@ -758,11 +765,11 @@ ul.links {
     font-size: 1.34rem;
   }
   p {
-    font-size: 1.25rem;
+    font-size: var(--font-small);
     margin-top: 1em;
   }
   article {
-    padding: 2em 0 2em 0;
+    padding: 1em;
   }
   .active {
     font-size: 1.4rem;
