@@ -6,6 +6,7 @@ const menuPadding = document.getElementById("menu-padding");
 const headerFocus = document.querySelector(".focus");
 const bodyFocus = document.querySelector(".focus2");
 const footerFocus = document.querySelector(".focus3");
+const closeNavigationMenu = document.querySelector(".blur");
 
 function addClassToBlur(className) {
   className.classList.add("blur");
@@ -13,6 +14,11 @@ function addClassToBlur(className) {
 
 function removeClassToBlur(className) {
   className.classList.remove("blur");
+}
+
+function closeNavigationMenuOnClick(className) {
+  className.classList.remove("open");
+  className.classList.remove("show");
 }
 
 let menuOpen = false;
@@ -25,12 +31,27 @@ menuButton.addEventListener("click", () => {
     addClassToBlur(footerFocus);
     menuOpen = true;
   } else {
-    menuButton.classList.remove("open");
-    navList.classList.remove("show");
+    closeNavigationMenuOnClick(menuButton);
+    closeNavigationMenuOnClick(navList);
     removeClassToBlur(headerFocus);
     removeClassToBlur(bodyFocus);
     removeClassToBlur(footerFocus);
     menuOpen = false;
+  }
+});
+
+document.addEventListener("click", (clickEvent) => {
+  if (
+    clickEvent.target.id !== "nav-list" &&
+    clickEvent.target.id !== "menu-btn"
+  ) {
+    closeNavigationMenuOnClick(menuButton);
+    closeNavigationMenuOnClick(navList);
+    removeClassToBlur(headerFocus);
+    removeClassToBlur(bodyFocus);
+    removeClassToBlur(footerFocus);
+    menuOpen = false;
+    console.log(clickEvent.target);
   }
 });
 
