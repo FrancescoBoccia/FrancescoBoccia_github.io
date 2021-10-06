@@ -51,7 +51,6 @@ document.addEventListener("click", (clickEvent) => {
     removeClassToBlur(bodyFocus);
     removeClassToBlur(footerFocus);
     menuOpen = false;
-    console.log(clickEvent.target);
   }
 });
 
@@ -73,3 +72,8 @@ function scrollEventResponsive() {
   }
 }
 window.addEventListener("scroll", scrollEventResponsive);
+
+
+
+
+
